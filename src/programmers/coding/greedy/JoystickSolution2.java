@@ -1,4 +1,4 @@
-package com.greedy.joystick;
+package programmers.coding.greedy;
 
 class JoystickSolution2 {
 

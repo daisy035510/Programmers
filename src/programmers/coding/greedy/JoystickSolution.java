@@ -1,4 +1,4 @@
-package com.greedy.joystick;
+package programmers.coding.greedy;
 
 class JoystickSolution {
 
@@ -24,9 +24,10 @@ class JoystickSolution {
                 nextIndex++;
             }
             //min=Math.min(min,i+length-next+Math.min(i,length-next));
-            move = Math.min(move, i * 2 + (name.length() - nextIndex));// 오른쪽으로 갔다 다시 왼쪽으로 꺾기
-            move = Math.min(move, i + (name.length() - nextIndex) * 2);// 왼쪽으로 갔다 다시 오른쪽으로 꺾기
+            move = Math.min(move, i * 2 + (name.length() - nextIndex));// 오른쪽으로 갔다 다시 왼쪽으로 꺾기(BBAAAAAYYY)
+            move = Math.min(move, i + (name.length() - nextIndex) * 2);// 왼쪽으로 갔다 다시 오른쪽으로 꺾기(CCCAAAAAAY)
         }
+
         System.out.println("upDown : " + upDown);
         System.out.println("move : " + move);
 
