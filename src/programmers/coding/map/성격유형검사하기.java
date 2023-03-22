@@ -5,8 +5,8 @@ import java.util.Map;
 
 public class 성격유형검사하기 {
 
-    public static final String[] INDEX = {"RT", "CF", "JM", "AN"};
-    public static final int STANDARD  = 4;
+    public static final String[] INDEX = {"RT", "CF", "JM", "AN"}; // 성격유형검사 지표
+    public static final int STANDARD  = 4; // 점수 기준점
     public static void main(String[] args) {
 
         // survey	choices	result
