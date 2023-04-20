@@ -2,6 +2,7 @@ package programmers.coding.map;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Optional;
 
 public class 성격유형검사하기 {
 
@@ -32,11 +33,11 @@ public class 성격유형검사하기 {
             char left = chArr[0];   // 왼쪽 성격 유형검사
             char right = chArr[1];  // 오른쪽 성격 유형검사
 
-            // 4보다 크다면 왼쪽 성격유형검사 선택
+            // 4보다 작다면 왼쪽 성격유형검사 선택
             if(score < STANDARD) {
-                hashMap.put(left, hashMap.getOrDefault(left, 0) + Math.abs(score - STANDARD));
+                hashMap.put(left, hashMap.getOrDefault(left, 0) + -(score - STANDARD));
             } else {
-                hashMap.put(right, hashMap.getOrDefault(right, 0) + Math.abs(score - STANDARD));
+                hashMap.put(right, hashMap.getOrDefault(right, 0) + (score - STANDARD));
             }
         }
 
@@ -50,16 +51,14 @@ public class 성격유형검사하기 {
             int rScore = hashMap.containsKey(chArr[1]) ? hashMap.get(chArr[1]) : 0;
 
             // 왼쪽 점수가 더 높다면
-            if(lScore > rScore) {
-                answer += chArr[0];
-            } else if(lScore < rScore) {
+            if(lScore < rScore) {
                 answer += chArr[1];
             } else {
                 answer += chArr[0];
             }
         }
 
-       // System.out.println("answer >> " + answer);
+        System.out.println("answer >> " + answer);
         return answer;
     }
 

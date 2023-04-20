@@ -1,0 +1,8 @@
+
+€
+java:S1488"^Immediately return this expression instead of assigning it to the temporary variable "answer".(†ªÄòşÿÿÿÿ8à½Ûƒõ0
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ó…úòıÿÿÿÿ8à½Ûƒõ0
+l
+java:S1172"JRemove these unused method parameters "cap", "n", "deliveries", "pickups".(ï±ûÿÿÿÿ8å½Ûƒõ0
+W
+java:S1128"5Remove this unused import 'com.sun.tools.javac.Main'.( ƒ™şüÿÿÿÿ8å½Ûƒõ0
